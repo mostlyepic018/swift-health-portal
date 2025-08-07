@@ -1,9 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Heart, Phone } from "lucide-react";
-import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
-  const navigate = useNavigate();
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b shadow-card">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
@@ -29,8 +27,8 @@ export const Header = () => {
             <Phone className="h-4 w-4" />
             Emergency
           </Button>
-          <Button variant="medical" size="sm" onClick={() => navigate("/doctor/login")}>
-            Doctor Login
+          <Button variant="medical" size="sm">
+            Login
           </Button>
         </div>
       </div>
